@@ -3,8 +3,8 @@ package PizzaPersonalizada;
 public abstract class IngredienteExtra implements Pizza {
     protected Pizza pizzaDecorada;
 
-    public IngredienteExtra(Pizza pizza) {
-        this.pizzaDecorada = pizza;
+    public IngredienteExtra(Pizza pizzaDecorada) {
+        this.pizzaDecorada = pizzaDecorada;
     }
 
     @Override
