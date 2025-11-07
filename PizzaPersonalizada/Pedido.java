@@ -15,13 +15,17 @@ public class Pedido {
         this.pizza = pizza;
     }
 
-    public void mostrarPedido() {
+    public void mostrarDetallePedido() {
         System.out.println("🧾 Pedido para: " + nombreCliente);
-        System.out.println("🪪 Identificación: " + identificacion);
+        System.out.println("🪪 ID: " + identificacion);
         System.out.println("📧 Correo: " + correo);
         System.out.println("📞 Teléfono: " + telefono);
         System.out.println("🍕 Descripción: " + pizza.getDescripcion());
         System.out.println("💰 Total a pagar: $" + pizza.getCosto());
-        System.out.println("--------------------------------------");
+        System.out.println("==================================");
+    }
+
+    public String getDescripcion() {
+        return pizza.getDescripcion();
     }
 }

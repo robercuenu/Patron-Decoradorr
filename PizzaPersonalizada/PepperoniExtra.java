@@ -1,7 +1,6 @@
 package PizzaPersonalizada;
 
 public class PepperoniExtra extends IngredienteExtra {
-
     public PepperoniExtra(Pizza pizzaDecorada) {
         super(pizzaDecorada);
     }
@@ -13,6 +12,7 @@ public class PepperoniExtra extends IngredienteExtra {
 
     @Override
     public double getCosto() {
-        return pizzaDecorada.getCosto() + 3.5; // costo adicional por pepperoni extra
+        return pizzaDecorada.getCosto() + 3.0;
     }
 }
+
